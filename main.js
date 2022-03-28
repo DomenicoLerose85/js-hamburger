@@ -1,16 +1,14 @@
-const hamburgerMenu = document.querySelector ('hamburger-menu');
 
-const hamburgerMenuList = document.querySelector ('hamburger-menu ul li a');
+const bottoneApri = document.querySelector('.header-right > a');
 
-const closeBtn = document.querySelector ('close');
+const bottoneChiudi = document.querySelector('.close');
 
-console.log = (hamburgerMenu, hamburgerMenuList, closeBtn);
+bottoneApri.addEventListener('click', function(){
+    document.querySelector('.hamburger-menu').classList.add('active');
 
-function myFunction("click") {
-    const hamburgerMenu = document.querySelector ('hamburger-menu') 
-    const hamburgerMenuList = document.querySelector ('hamburger-menu ul li a');
-    const closeBtn = document.querySelector ('close');
-    console.log = (hamburgerMenu, hamburgerMenuList, closeBtn); 
-}
+});
 
-element.addEventListener("click", myFunction); 
+bottoneChiudi.addEventListener('click', function(){
+    document.querySelector('.hamburger-menu').classList.remove('active');
+});
+
